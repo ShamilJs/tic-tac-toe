@@ -177,6 +177,96 @@ html {
 	}
 }
 
+.settings {
+
+	&__tab {
+		padding: 20px;
+	}
+}
+.tab {
+	
+	&__title {
+		margin-top: 20px;
+		font-family: 'Shadows Into Light', cursive;
+		font-size: 20px;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	&__tab {
+		display: flex;
+		align-items: center;
+	}
+	&__move {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 1 0 50%;
+		background-color: #ffd;
+		height: 50px;
+		text-align: center;
+		border: 1px solid #ffd;
+		font-family: 'Shadows Into Light', cursive;
+		font-size: 15px;
+		padding: 0 0 10px 0;
+		cursor: pointer;
+		font-weight: 700;
+		&:hover {
+			background-color: #F08080;
+			transition-duration: 500ms;
+			
+		}
+
+	}
+	&__move p{
+		color: blue;
+		font-size: 50px;
+		text-align: center;
+	}
+
+	&__gamer {
+		flex: 1 0 50%;
+		background-color: #ffd;
+		height: 50px;
+		text-align: center;
+		border: 1px solid #ffd;
+		font-family: 'Shadows Into Light', cursive;
+		font-size: 15px;
+		padding: 10px 5px;
+		cursor: pointer;
+		font-weight: 700;
+		&:hover {
+			background-color: #F08080;
+			transition-duration: 500ms;
+			
+		}
+	}
+}
+
+
+
+.gamer-active, .move-active {
+	background-color: #F08080;
+	cursor: default;
+	pointer-events: none;
+}
+
+.conditions {
+
+	&__text {
+		display: block;
+		list-style: none;
+		padding: 20px;
+	}
+	&__text li {
+		margin-bottom: 10px;
+		font-family: 'Shadows Into Light', cursive;
+		font-size: 15px;
+		text-decoration: none;
+	}
+}
+
+
+
 
 
 
@@ -209,7 +299,7 @@ html {
 		font-size: 32px;
 	}
 	.header {
-		height: 60px;
+		height: 70px;
 	}
 	.settings__title, .conditions__title{
 		font-size: 24px;
@@ -230,7 +320,7 @@ html {
 		font-size: 28px;
 	}
 	.header {
-		height: 50px;
+		height: 60px;
 	}
 	.settings__title, .conditions__title{
 		font-size: 22px;
@@ -248,7 +338,7 @@ html {
 	}
 	
 	.nav_nav__burger{
-		top: 10px;
+		top: 15px;
 		right: 30px;
 		width: 30px;
 		height: 30px;
@@ -256,6 +346,40 @@ html {
 	.close-act{
 		top: 25px;
 	}
+	.conditions__text li {
+		margin-bottom: 10px;
+		font-family: 'Shadows Into Light', cursive;
+		font-size: 12px;
+		text-decoration: none;
+	}
+	.tic-tac__item {
+		height: 80px;
+		width: 80px;
+	}
+	.tic-tac__block {
+		width: 240px;
+	}
+	.tab__title {
+		font-family: 'Shadows Into Light', cursive;
+		font-size: 16px;
+	}
+	.tab__gamer {
+		height: 40px;
+		font-size: 14px;
+		padding: 5px 5px;
+	}
+	.tic-tac__item {
+		font-size: 80px;
+	}
+	.alert p {
+		font-family: 'Shadows Into Light', cursive;
+		font-size: 22px;
+		text-align: center;
+	}
+	.alert {
+		padding: 0 20px;
+	}
+
 }
 @media only screen and (max-width: 425px) {
 	.header__title {
@@ -286,7 +410,7 @@ html {
 		font-size: 22px;
 	}
 	.header {
-		height: 40px;
+		height: 45px;
 	}
 	.settings, .conditions {
 		width: 300px;
@@ -296,7 +420,7 @@ html {
 		margin-top: 10px;
 	}
 	.nav_nav__burger{
-		top: 6px;
+		top: 8px;
 		right: 15px;
 		width: 30px;
 		height: 30px;
